@@ -1,0 +1,169 @@
+(qec-se-research) PS C:\Users\manvi\Documents\PalsbergResearch> docker run -it quantumse
+root@d4638d1e6111:~/QuantumSE.jl/example# python comp_symqv.py
+bash: python: command not found
+root@d4638d1e6111:~/QuantumSE.jl/example# python3 comp_symqv.py
+Starting solver...
+Elapsed time 0.0582 seconds.
+δ-sat with δ = 0.0001
+Runtime for 1: 0.0590062141418457
+Starting solver...
+Elapsed time 0.1197 seconds.
+δ-sat with δ = 0.0001
+Runtime for 2: 0.12087011337280273
+Starting solver...
+Elapsed time 0.2326 seconds.
+δ-sat with δ = 0.0001
+Runtime for 3: 0.23424530029296875
+Starting solver...
+Elapsed time 0.4285 seconds.
+δ-sat with δ = 0.0001
+Runtime for 4: 0.4317319393157959
+Starting solver...
+Elapsed time 0.6662 seconds.
+δ-sat with δ = 0.0001
+Runtime for 5: 0.6685194969177246
+Starting solver...
+Elapsed time 1.0085 seconds.
+δ-sat with δ = 0.0001
+Runtime for 6: 1.0112535953521729
+Starting solver...
+Elapsed time 1.5007 seconds.
+δ-sat with δ = 0.0001
+Runtime for 7: 1.5036401748657227
+Starting solver...
+Elapsed time 2.1190 seconds.
+δ-sat with δ = 0.0001
+Runtime for 8: 2.1222517490386963
+Starting solver...
+Elapsed time 2.8963 seconds.
+δ-sat with δ = 0.0001
+Runtime for 9: 2.900723934173584
+Starting solver...
+Elapsed time 3.9791 seconds.
+δ-sat with δ = 0.0001
+Runtime for 10: 3.9848427772521973
+Starting solver...
+Elapsed time 5.1054 seconds.
+δ-sat with δ = 0.0001
+Runtime for 11: 5.110045671463013
+Starting solver...
+Elapsed time 6.4800 seconds.
+δ-sat with δ = 0.0001
+Runtime for 12: 6.485308408737183
+Starting solver...
+Elapsed time 8.5045 seconds.
+δ-sat with δ = 0.0001
+Runtime for 13: 8.515954732894897
+Starting solver...
+Elapsed time 10.4620 seconds.
+δ-sat with δ = 0.0001
+Runtime for 14: 10.467626810073853
+Starting solver...
+Elapsed time 14.6683 seconds.
+δ-sat with δ = 0.0001
+Runtime for 15: 14.676339626312256
+Starting solver...
+Elapsed time 16.9537 seconds.
+δ-sat with δ = 0.0001
+Runtime for 16: 16.96268916130066
+Starting solver...
+Elapsed time 20.2219 seconds.
+δ-sat with δ = 0.0001
+Runtime for 17: 20.228870153427124
+Starting solver...
+Elapsed time 27.4097 seconds.
+δ-sat with δ = 0.0001
+Runtime for 18: 27.41748595237732
+Starting solver...
+Elapsed time 28.5733 seconds.
+δ-sat with δ = 0.0001
+Runtime for 19: 28.582791090011597
+Starting solver...
+Elapsed time 30.0840 seconds.
+δ-sat with δ = 0.0001
+Runtime for 20: 30.092267990112305
+root@d4638d1e6111:~/QuantumSE.jl/example# cat comp_symqv.dat 
+nq time
+1 0.0590062141418457
+2 0.12087011337280273
+3 0.23424530029296875
+4 0.4317319393157959
+5 0.6685194969177246
+6 1.0112535953521729
+7 1.5036401748657227
+8 2.1222517490386963
+9 2.900723934173584
+10 3.9848427772521973
+11 5.110045671463013
+12 6.485308408737183
+13 8.515954732894897
+14 10.467626810073853
+15 14.676339626312256
+16 16.96268916130066
+17 20.228870153427124
+18 27.41748595237732
+19 28.582791090011597
+20 30.092267990112305
+root@d4638d1e6111:~/QuantumSE.jl/example# julia comp_quantumse.jl
+true
+Runtime for 1: 0.028488874435424805
+true
+Runtime for 2: 0.032881975173950195
+true
+Runtime for 3: 0.036489009857177734
+true
+Runtime for 4: 0.034316062927246094
+true
+Runtime for 5: 0.03583717346191406
+true
+Runtime for 6: 0.03868913650512695
+true
+Runtime for 7: 0.04011106491088867
+true
+Runtime for 8: 0.04518413543701172
+true
+Runtime for 9: 0.0414731502532959
+true
+Runtime for 10: 0.040617942810058594
+true
+Runtime for 11: 0.04441189765930176
+true
+Runtime for 12: 0.04715299606323242
+true
+Runtime for 13: 0.04752397537231445
+true
+Runtime for 14: 0.04681086540222168
+true
+Runtime for 15: 0.04911684989929199
+true
+Runtime for 16: 0.062397003173828125
+true
+Runtime for 17: 0.08411502838134766
+true
+Runtime for 18: 0.049520015716552734
+true
+Runtime for 19: 0.05073690414428711
+true
+Runtime for 20: 0.049690961837768555
+root@d4638d1e6111:~/QuantumSE.jl/example# cat comp_quantumse.dat
+nq time
+1 0.028488874435424805
+2 0.032881975173950195
+3 0.036489009857177734
+4 0.034316062927246094
+5 0.03583717346191406
+6 0.03868913650512695
+7 0.04011106491088867
+8 0.04518413543701172
+9 0.0414731502532959
+10 0.040617942810058594
+11 0.04441189765930176
+12 0.04715299606323242
+13 0.04752397537231445
+14 0.04681086540222168
+15 0.04911684989929199
+16 0.062397003173828125
+17 0.08411502838134766
+18 0.049520015716552734
+19 0.05073690414428711
+20 0.049690961837768555
